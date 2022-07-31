@@ -1,3 +1,5 @@
+<strong>An Strapi App.</strong>
+
 Sample API: 
 
 https://damp-sea-13907.herokuapp.com/api/products?populate=*
