@@ -1,0 +1,55 @@
+{
+  "kind": "collectionType",
+  "collectionName": "products",
+  "info": {
+    "singularName": "product",
+    "pluralName": "products",
+    "displayName": "Product",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true,
+      "minLength": 5
+    },
+    "description": {
+      "type": "string",
+      "required": false,
+      "minLength": 15
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "basePrice": {
+      "type": "decimal",
+      "required": true
+    },
+    "category": {
+      "type": "enumeration",
+      "enum": [
+        "fashion",
+        "electronics",
+        "grocery"
+      ],
+      "required": true
+    },
+    "promoPrice": {
+      "type": "decimal"
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    }
+  }
+}
